@@ -2,12 +2,17 @@ package com.example.task14;
 
 public class Task14 {
 
-
     public static int reverse(int value) {
 
-        // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
+        int result = 0;
+        int remaining = value;
 
-        return 0;
+        while (remaining > 0) {
+            result = result * 10 + remaining % 10;
+            remaining /= 10;
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {

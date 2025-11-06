@@ -6,6 +6,9 @@ public class Task13 {
 
         // TODO привести букву к верхнему регистру
 
+        if (c >= 'a' && c <= 'z') {
+            return (char) (c - ('a' - 'A'));
+        }
         return c;
     }
 
